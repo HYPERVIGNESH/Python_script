@@ -1,0 +1,70 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "017fb5fe-e78d-4334-92c9-aa3bd15e59a7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter a number  5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5  is a prime number\n"
+     ]
+    }
+   ],
+   "source": [
+    "a= int(input(\"enter a number \"))\n",
+    "def is_prime(n):\n",
+    "    if n <= 1:\n",
+    "         return False\n",
+    "    for i in range (2,n):\n",
+    "        if n % i == 0:\n",
+    "             return False\n",
+    "    return True\n",
+    "\n",
+    "if is_prime(a):\n",
+    "    print(a,\" is a prime number\")\n",
+    "else:\n",
+    "    print(a,\"is not a prime number\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7d63eda2-1497-45bd-906d-53d2fd6e0d74",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
